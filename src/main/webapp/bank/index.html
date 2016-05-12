@@ -59,15 +59,6 @@
 	  	<div class="eleven columns alpha">
 	  	<p> 中文 English	Français</p> 
 	  	</div>
-	  	<div class="three columns"></div>
-	  	<div class="one columns">
-	  		<a href="userlogin.html"><p>Login</p></a>
-	  	</div>
-		<div class="one columns omega">
-	  		<a href="registre.html"><p>Register</p> </a>
-
-	  	</div>
-	  	</div>
 	  </div>
 	</div>
 
@@ -99,6 +90,7 @@
             <option value="bankInformation.html">-- Bank information</option>
             <option value="activity.html">-- activity information</option>
             <option value="forum.html">Forum</option>
+            <option value="useLogin.html">Login</option>
           </select>
         </div>
         <!--.responsive nav--> 
@@ -123,7 +115,7 @@
             </li>
             <li><a href="forum.html">Forum</a></li>
       
-            <li><a href="">login</a>
+            <li><a href="">Login</a>
                 <ul class="sub-nav">
                 <li><a href="userLogin.html">user login</a></li>
                 <li><a href="managerLogin.html">manager login</a></li>
@@ -182,30 +174,7 @@
     </div>
   </div>
   <!--.slider--> 
-  <div class="six colums">
-  <h6>livret A</h6>
-         
-<div ng-app="myApp" ng-controller="customersCtrl"> 
 
-	 interest rate :<input type="number" min=0 data-ng-model="rate" data-ng-init=" rate= 0.1">
-        <br>
-        amount :<input type="number" min=0 data-ng-model="amount" data-ng-init="amount = 1000">
-        <br>
-        <button ng-click="result = rate *  amount" ng-init="count=0">
- 			 compute
-		</button>
-        interest :{{ result }}
-       
-<ul>
-  <li ng-repeat="x in names">
-    {{ x.cityId + ', ' + x.cityName +','+x.cityLocation}}
-  </li>
-</ul>
-
-</div>
-
-
-  </div>
   
   <!--shadow top-->
   <div class="sixteen columns shadow"> <img src="images/shadow/top.png" title="" alt="" /> </div>
@@ -457,8 +426,8 @@
         <div class="box-content">
           <h3>Contact Info</h3>
           <p><b>Tel:</b>0683304385</p>
-           <p><b>Email:</b> <a href="chengyuli91@gmail.com">chengyuli91@gmail.com</a></p>
-            <p><b>Contact Person:</b> Chengyu LI</p>
+           <p><b>Email:</b> <a href="chengyuli91@gmail.com">liu.xinyu.chloe@gmail.com</a></p>
+            <p><b>Contact Person:</b> Xinyu Liu</p>
         </div>
         <!--.contact info content--> 
         
@@ -522,6 +491,7 @@
 <script src="js/jquery.progress.js"></script> 
 <script src="js/jquery.tipsy.js"></script> 
 <script src="js/custom.js"></script> 
+
 <script src="js/angular.min.js"></script>
 <script src="js/angular-route.min.js"></script>
 

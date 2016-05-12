@@ -2,19 +2,21 @@
 
 <!--content-->
 
-<div ng-controller="loginCtrl" class="container">
-	<div class="ten columns">
+<div ng-controller="loginCtrl"  ng-class="container">
+	<div  style="width: 80%; margin-left: auto">
 
-   <form action="/" method="" class="search-form" id ="mylogin">
-     
-        <h2>e-mail</h2><br>
-        
-          <input type="text"  ng-model="username"> <br>
+    <form action="/" method="" id ="mylogin">
+        <br>
+        <div>
+          <h1>e-mail</h1>
+          <input type="text"  ng-model="username"> <br><br>
+        </div>
+        <div>
+            <h1>password</h1>
+            <input type="text"  ng-model="password"><br><br>
+        </div>
 
-        <h2>password</h2><br>
-          <input type="text"  ng-model="password"></br>
-            
-        <button type = "button" ng-click="submit()">login</button>
+          <button type = "button" ng-click="submit()">login</button>
     </form>
         
 

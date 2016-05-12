@@ -1,0 +1,41 @@
+.left{
+    position:relative;
+    float: left;
+    width: 30%;
+    background:white;
+    border-right: 2px solid darkgrey;
+    height: 200px;
+}
+
+.spaceDetail{
+    position:relative;
+    float:right;
+    width:68%;
+    height:200px;
+    background:white;
+    border-right: 1px solid darkgrey;
+}
+/*the button on the left tab?*/
+ol{
+    list-style:none;
+    padding:10px;
+    margin: 2px;
+}
+li{
+    position:relative;
+    width:inherit;
+    height: 20px;
+    background:white;
+}
+a{
+    text-decoration:none;
+}
+.functionButton{
+    cursor:pointer;
+    width:inherit;
+    margin:5px;
+
+}
+.myCommands{
+    border:1px black solid;
+}

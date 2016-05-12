@@ -12,8 +12,9 @@
 <body >-->
 <div  ng-controller="spaceCtrl"  ng-class="container">
     <!-- the left function list-->
+    <br>
     <div class="left">
-        <div>
+        <div style=" padding-left: 198px;">
             <ol>
                 <li   type="button"  ng-click="seeMyCommands()" class="functionButton">my commands</li>
                 <li  type="button"  ng-click="goToApply()" class="functionButton">apply a bank account</li>
@@ -46,6 +47,7 @@
                 <span>{{latestCommand.manager}}</span>
             </div>
             <!-- button to deal with this command-->
+            <br>
             <div>
                 <button>cancel this command</button>
                 <button>contact manager</button>

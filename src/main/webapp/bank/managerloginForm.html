@@ -2,17 +2,17 @@
 
 <!--content-->
 
-<div ng-controller="loginForm.html"  ng-class="container">
+<div ng-controller="ManagerloginCtrl"  ng-class="container">
 	
 
-   <form action="/" method="" class="search-form" id ="mylogin">
-     
-        <h2>e-mail</h2><br>
+   <form action="/" method=""  id ="mylogin" style="width: 80%; margin-left: auto">
+     <br>
+        <h1>manager id</h1>
         
-          <input type="text"  ng-model="username"> <br>
+          <input type="text"  ng-model="username"> <br><br>
 
-        <h2>password</h2><br>
-          <input type="text"  ng-model="password"></br>
+        <h1>password</h1>
+          <input type="text"  ng-model="password"></br><br>
             
         <button type = "button" ng-click="submit()">login</button>
     </form>

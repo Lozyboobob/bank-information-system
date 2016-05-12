@@ -17,8 +17,9 @@
 </head>
 <body >
 -->
-<div ng-app="mainUserApp"  ng-controller="applyCtrl"  ng-class="container">
+<div ng-app="mainUserApp"  ng-controller="applyCtrl"  ng-class="container" style="margin-left:30%">
     <!--choose a bank-->
+    <br>
     <div>
         <span>{{mybanks.city_name}}</span>
         <label>choose a bank</label>
@@ -46,6 +47,7 @@
 
             <div class="tab-content" id="1">
                 <div class="tab clearfix">
+                    <br>
                     <label>your zip</label>
                     <form>
                         <p><input type="text" name="zip" ng-model="zip" ></p>

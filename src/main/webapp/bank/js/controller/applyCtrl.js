@@ -1,7 +1,7 @@
 /**
  * Created by lau on 2016/3/20.
  */
-app.controller('applyCtrl',function($scope,bankListFac,$rootScope,$location){
+app.controller('applyCtrl',function($scope,bankListFac,$rootScope,$location,$http){
     $scope.zip="94400";
     bankListFac.success(function(bankData){$scope.banks=bankData.bankList;});
     //$scope.showList=false;
@@ -31,10 +31,23 @@ app.controller('applyCtrl',function($scope,bankListFac,$rootScope,$location){
         $scope.applyer=$rootScope.loginUser;
         $rootScope.chose_bank=bankSelector.options[bankSelector.selectedIndex].text;
         $rootScope.chose_bankLocation=locationSelector.options[locationSelector.selectedIndex].text;
-        if($rootScope.recoCode!="123"){
-            $rootScope.recoCode="";
-        }
+       
         $location.path('/applied');
+
+        //submit data via web service
+      //  alert($rootScope.mail);
+
+        $http.post("http://localhost:8080/PA8Presentation/request",{
+
+            "username":$rootScope.mail,
+            "bankname":$rootScope.chose_bank,
+            "zip":"94000",
+            "recommendCode":$rootScope.recoCode,
+            "time":"",
+            "status":"",
+            "requestId":"",
+            "requestBank":"Villejuif"
+           });
     };
 
 

@@ -160,7 +160,7 @@
 	padding: 0.85em 1.25em;
 	cursor: pointer;
 	border: none;
-	background: transparent;
+	background: #FE8A18;
 	text-align: center;
 }
 
@@ -315,7 +315,7 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-	background: #212227;
+	background: #2C2D34;
 	z-index: 1000; /* 控制标签的层级关系,决定谁在最上层，网页的Z轴 */
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -419,7 +419,8 @@
 	opacity: 1;
 }
 
-.compare__item {
+.compare .compare__item {
+	float:left;
 	height: 100%;
 	width: 50%;
 	background: #24252A;
@@ -460,8 +461,8 @@
 }
 
 /* three items   三个商品比较的情况*/
-.compare__item:first-of-type:nth-last-of-type(3),
-.compare__item:first-of-type:nth-last-of-type(3) ~ .compare__item {
+.compare .compare__item:first-of-type:nth-last-of-type(3),
+.compare .compare__item:first-of-type:nth-last-of-type(3) ~ .compare__item {
     width: 33.3333%; /*每一个商品对比条的宽*/
 }
 

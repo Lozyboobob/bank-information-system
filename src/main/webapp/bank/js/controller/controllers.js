@@ -9,18 +9,20 @@ app.controller('loginCtrl',function(userListFac,$scope,$location,$http,$rootScop
   userListFac.success(function(userData){$scope.users=userData.userList;});
   $rootScope.loginUser;
   $rootScope.login="false";
-  $scope.mail="admin";
-  $scope.password="admin";
+  $scope.mail="137150808@qq.com";
+  $scope.password="123";
   //$rootScope.mail='';
   //alert($scope.users[0].e_mail);
   $scope.submit=function(){
     var mail=$scope.mail;
     var passwd=$scope.password;
     var i=0;
+  //  alert($mail);
     for(;i<$scope.users.length;i++){
       if($scope.users[i].e_mail===mail&&$scope.users[i].pass===passwd)
       {
         $rootScope.loginUser=$scope.users[i];
+        $rootScope.mail=$scope.mail;
         $rootScope.login="true";
         $location.path('/login');
         break;
